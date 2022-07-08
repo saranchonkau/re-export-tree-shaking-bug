@@ -1,18 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <PageOne v-if="5 > 3"/>
+    <PageTwo v-else/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+
+const PageOne = import('./pages/PageOne.vue');
+const PageTwo = import('./pages/PageTwo.vue');
 
 export default Vue.extend({
   name: 'App',
   components: {
-    HelloWorld
+    PageOne,PageTwo
   }
 });
 </script>
