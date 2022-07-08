@@ -1,16 +1,18 @@
 <template>
 <div class="page-two">
-  <Form/>
 </div>
 </template>
 
 <script lang="ts">
 import {defineComponent} from "vue";
-import {Form} from "@/components";
+import {subtract} from "@/utils";
 
 export default defineComponent({
   name: "PageTwo",
-  components:{Form}
+  mounted() {
+    const result = subtract(2,1);
+    alert(result);
+  }
 })
 </script>
 

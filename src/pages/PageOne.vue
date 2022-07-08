@@ -1,16 +1,18 @@
 <template>
 <div class="page-one">
-  <TextField/>
 </div>
 </template>
 
 <script lang="ts">
 import {defineComponent} from "vue";
-import {TextField} from "@/components";
+import {sum} from "@/utils";
 
 export default defineComponent({
   name: "PageOne",
-  components:{TextField}
+  mounted() {
+    const result = sum(1,2);
+    alert(result);
+  }
 })
 </script>
 
