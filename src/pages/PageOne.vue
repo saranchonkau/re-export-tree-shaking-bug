@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import {defineComponent} from "vue";
-import {TextField} from "@/components";
+import TextField from "@/components/text-field.vue";
 
 export default defineComponent({
   name: "PageOne",

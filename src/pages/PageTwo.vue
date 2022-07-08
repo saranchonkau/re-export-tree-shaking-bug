@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import {defineComponent} from "vue";
-import {Form} from "@/components";
+import Form from "@/components/form.vue";
 
 export default defineComponent({
   name: "PageTwo",
