@@ -1,8 +1,4 @@
-import Vue from 'vue'
-import App from './App.vue'
+const pageOne = import("./pages/page-one");
+const pageTwo = import("./pages/page-two");
 
-Vue.config.productionTip = false
-
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+export const result = new Date().valueOf() > 0 ? pageOne.then(console.log) : pageTwo.then(console.log)
